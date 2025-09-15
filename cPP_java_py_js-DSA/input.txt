@@ -1,0 +1,15 @@
+Topics to be covered in all 4 languagues 
+1. Introduction and starting point in the program 
+2.Input and Output 
+3.Different types of Variables 
+4. Varible declaration , Intialization 
+5.Function declaration , types , calling , passing parameters 
+6.if-else statement , switch statement
+7. Loops (for, while, do-while)
+8. Arrays and Strings
+9. Function and recursion concept 
+10.Functions and Function calls
+done till now 
+11. Exception Handling
+12. File Handling
+
