@@ -23,10 +23,19 @@ double findMedian(vector<int> &arr)
     }
     return ans;
 }
+void printArray(vector<int> arr)
+{
+    int n = arr.size();
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
 int main()
 {
     cout << "this is working , Median concept ";
-    vector<int> arr = {5, 3, 8, 1, 4};
+    vector<int> arr = {5, 3, 8, 1, 4, 9};
+    printArray(arr);
     double median = findMedian(arr);
     cout << "\nMedian: " << median << endl;
     return 0;
