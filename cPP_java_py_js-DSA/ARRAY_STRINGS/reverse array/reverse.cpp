@@ -17,7 +17,7 @@ void reverseArray(vector<int>&arr ){
         end--;
         
     }
-    cout<<"AFTER";
+    cout<<"AFTER:";
     printArray(arr);
     return ;
 }
