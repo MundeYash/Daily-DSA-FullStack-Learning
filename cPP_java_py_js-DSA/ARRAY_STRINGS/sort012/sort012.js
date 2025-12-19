@@ -1,9 +1,13 @@
-console.log((333/4));
 let arr =[0, 1, 2, 0, 1, 2, 1, 0];
 console.log(arr);
 
 // Approach 1: sorting Approach
-
+function sort012Sorting(arr)
+{
+    arr.sort((a,b)=>a-b);
+    return arr;
+}
+sort012Sorting(arr);
 //Approach2: count method 
 function sort012CountMethod(arr){
     console.log("Before sort: ",arr);
