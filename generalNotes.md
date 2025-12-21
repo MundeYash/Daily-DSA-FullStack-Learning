@@ -2,4 +2,8 @@
 
 - search in setting "inline suggestions"
 
-click on 
+
+// step to bind shortcut key to any task 
+click  Ctrl+Shift+P 
+- search about the task like (run a file)
+- click on setting icon and change the key binding.
