@@ -1,6 +1,48 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Optimsed appraoch : first Non-Repeating character in stream.
+string firstNonRepeatingCharInStream(string &s)
+{
+    string ans = "";
+    int n = s.size();
+    vector<int> freq(26, 0);
+    queue<char> q;
+
+    for (int i = 0; i < n; i++)
+    {
+
+        // case 1 :
+        int index = s[i] - 'a';
+
+        freq[index]++;
+        q.push(s[i]);
+
+        while (!q.empty())
+        {
+
+            char ch = q.front();
+
+            if (freq[ch - 'a'] > 1)
+            {
+                q.pop(); // repeating character
+            }
+            else
+            {
+                // this is answer non-repeating
+                ans.push_back(ch);
+                break;
+            }
+        }
+        // either you got some answer or not
+        if (q.empty())
+        {
+            // means don't get any ans
+            ans.push_back('#');
+        }
+    }
+    return ans;
+}
 char findFirstNonRepeatingCharApproach1_Better(string s)
 {
     // Better Approach : Hash Map
@@ -59,8 +101,15 @@ int main()
 {
     // EASY PROBLEM
     string s = "geeksforgeeks";
+    string s2 ="india";
     cout << findFirstNonRepeatingCharApproach1_BruteForce(s) << endl;
     cout << findFirstNonRepeatingCharApproach1_Better(s) << endl;
+    cout<<"Optimsed approach: "<<firstNonRepeatingCharInStream(s2)<<endl;
     cout << "Find the first Non Repeating Element in the string " << endl;
     return 0;
 }
+/*
+
+https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
+
+*/
