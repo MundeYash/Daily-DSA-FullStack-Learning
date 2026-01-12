@@ -24,6 +24,8 @@ int kthMinimum(vector<int> arr, int k ){
     return ans;
 }
 int kthMaximum(vector<int> arr, int k ){
+    // concept : heap-based-approach
+    // time Complexity :O(n),Space:O(n)
     int n = arr.size();
     int ans =-1;
     priority_queue<int, vector<int>, greater<int> > pq ; 
@@ -64,8 +66,8 @@ pair<int,int>findKthMinimum_MaximumElement_Sorting(vector<int>arr , int k ){
         if (k>n) return ans;
     
     sort(arr.begin(), arr.end());
-    ans.first = arr[k-1];
-    ans.second = arr[n-k];
+    ans.first = arr[k-1]; //kth minimum
+    ans.second = arr[n-k];// kth maximum 
     
     
     return ans;
