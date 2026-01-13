@@ -1,6 +1,8 @@
-// Problem Statement : Given a  matrix in which each row is sorted and we have find the median of this matrix elements
 
-// Brute Force Approach :--------------------------------------------------------------------------
+// Problem Statement : Given a  matrix in which each row is sorted and we have find the median of this matrix elements
+/*Optimised Approach : pending (binary search based solution ) ---------------------------------------------------------------------------*/
+
+/*Brute Force Approach :--------------------------------------------------------------------------*/
 
 // helper functions
 function findMedianInSortedArray(arr) {
@@ -23,7 +25,6 @@ function medianInRowiseSortedMatrix_Approach1_BruteForce(matrix) {
   return findMedianInSortedArray(arr);
 }
 
-// Optimised Approach : pending---------------------------------------------------------------------------
 
 // calling part
 
@@ -49,3 +50,8 @@ console.log(
   "The median of rowise sorted matrix is :",
   medianInRowiseSortedMatrix_Approach1_BruteForce(matrix3)
 );
+
+/**
+ Median in a rowise sorted matrix 
+
+ */
