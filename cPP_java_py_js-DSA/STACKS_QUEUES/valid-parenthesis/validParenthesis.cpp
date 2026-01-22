@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include "../../commonFunctions/printComplexity.h"
 using namespace std;
 bool isParenthesis(string s)
 {
@@ -50,10 +51,29 @@ bool isParenthesis(string s)
         return false;
     return true;
 }
+void validParenthesis_Optimsed(string s)
+{
+
+    // concept : stack and comparison of counter brackets
+    // time : O(n), space:O(1);
+    printComplexities("O(n)", "O(k)");
+    cout << s << " is : ";
+    if (isParenthesis(s))
+    {
+        cout << "Balanced string";
+    }
+    else
+    {
+        cout << "Not balanced string";
+    }
+    cout << endl;
+}
 int main()
 {
 
     string s = "()[]{}";
-    cout << isParenthesis(s) << endl;
+    string s2 = "(]";
+    validParenthesis_Optimsed(s);
+    validParenthesis_Optimsed(s2);
     return 0;
 }
