@@ -1,11 +1,15 @@
+import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
 let arr = [2, 3, -8, 7, -1, 2, 3];
 console.log(arr);
-function printTimeSpaceComplexity(timeComplexity, spaceComplexity) {
-  console.log("TIME", timeComplexity);
-  console.log("SPACE", spaceComplexity);
-}
 
-function kadaneAlgorithm_Brute(arr) {
+function kadaneAlgorithm_Approach_Brute(arr) {
+  // concept : explore all subarray, sum comparison
+  // time : O(N^2) , space : O(1)
+  printComplexityOfSolution(
+    "Brute :Explore all possible combination",
+    "O(N^2)",
+    "O(1)",
+  );
   let n = arr.length;
   let maxiSum = Number.MIN_SAFE_INTEGER;
   for (let i = 0; i < n; i++) {
@@ -17,13 +21,13 @@ function kadaneAlgorithm_Brute(arr) {
       }
     }
   }
-  console.log("Approach");
-
-  printTimeSpaceComplexity("O(N)", "O(1)");
   return maxiSum;
 }
-console.log("The maximum sum-subarray values is ", kadaneAlgorithm_Brute(arr));
-function kadaneAlgorithm_Approach_Optised(arr) {
+console.log(
+  "The maximum sum-subarray values is ",
+  kadaneAlgorithm_Approach_Brute(arr),
+);
+function kadaneAlgorithm_Approach_Optimised(arr) {
   // concept : negative sum and sum reset to 0
   let n = arr.length;
   let maxSum = Number.MIN_SAFE_INTEGER;
@@ -34,13 +38,12 @@ function kadaneAlgorithm_Approach_Optised(arr) {
     maxSum = Math.max(maxSum, currSum);
     if (currSum < 0) currSum = 0; // sum here becomes negative
   }
-  console.log("Approach");
 
-  printTimeSpaceComplexity("O(N)", "O(1)");
+  printComplexityOfSolution("Optimised - Negative sum ", "O(N)", "O(1)");
   return maxSum;
 }
 
 console.log(
   "The maximum sum-subarray values is ",
-  kadaneAlgorithm_Approach_Optised(arr)
+  kadaneAlgorithm_Approach_Optimised(arr),
 );

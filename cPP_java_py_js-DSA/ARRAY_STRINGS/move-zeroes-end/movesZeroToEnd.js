@@ -31,13 +31,7 @@ function approach1BruteForce(arr) {
   console.log("Brute Force ", approach1BruteForce(arr));
 })();
 
-// helper function - for swapping element
-function swapElements(index1, index2, arr) {
-  let temp = arr[index1];
-  arr[index1] = arr[index2];
-  arr[index2] = temp;
-  return;
-}
+
 function approach2Optimised(arr) {
   // concept : Two Pointer and swaping
 
@@ -45,7 +39,8 @@ function approach2Optimised(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] != 0) {
       // swap in case of non-zero element
-      swapElements(i, j, arr);
+      // swapElements(i, j, arr);
+      [arr[i], arr[j]] = [arr[j], arr[i]];
       j++;
     }
   }

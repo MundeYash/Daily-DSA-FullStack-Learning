@@ -1,3 +1,4 @@
+import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
 // Problem : Given sorted array and we need remove all the duplicate elements and left behind only the non-duplicate element in the array
 /*------------------------------------------------------------ */
 
@@ -6,6 +7,11 @@
 function removeDuplicatedSortedArray_Approach1_Optimised(arr) {
   // concept : Two pointer for start index - In-place
   // time :o(n), space :O(1)
+  printComplexityOfSolution(
+    "Optimised- two pointer comparison",
+    "O(N)",
+    "O(1)",
+  );
   let n = arr.length;
 
   let startIndex = 0;
