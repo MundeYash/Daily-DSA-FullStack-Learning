@@ -1,9 +1,12 @@
 #include <bits/stdc++.h>
+#include "../../commonFunctions/printComplexity.h"
 using namespace std;
 
+/*----------------------------------------------------------------------------------------*/
 // Optimsed appraoch : first Non-Repeating character in stream.
-string firstNonRepeatingCharInStream(string &s)
+string firstNonRepeatingCharInStream_Optimised(string &s)
 {
+    cout << "Input string " << s << endl;
     string ans = "";
     int n = s.size();
     vector<int> freq(26, 0);
@@ -43,9 +46,12 @@ string firstNonRepeatingCharInStream(string &s)
     }
     return ans;
 }
+
+/*-------------------------------Better Approach : Hash Map---------------------------------------------------------*/
 char findFirstNonRepeatingCharApproach1_Better(string s)
 {
-    // Better Approach : Hash Map
+    // Better Approach concept : Hash Map
+    printComplexities("O(n)", "O(k)");
 
     unordered_map<int, pair<int, int>> mp; // key  , (counter, index)
     int n = s.length();
@@ -72,6 +78,7 @@ char findFirstNonRepeatingCharApproach1_Better(string s)
     return s[minIndex];
 }
 
+/*----------------------------------------------------------------------------------------*/
 // Helper function :which checks the existence of character in entire string
 bool ifExists(int index, string s)
 {
@@ -83,9 +90,13 @@ bool ifExists(int index, string s)
     }
     return false;
 }
+
 char findFirstNonRepeatingCharApproach1_BruteForce(string s)
 {
     // Brute force approach
+    // concept: check existence -
+    // time:O(n^2), space :O(1)
+    printComplexities("O(n^2)", "O(1)");
 
     int n = s.length();
     for (int i = 0; i < n; i++)
@@ -97,14 +108,18 @@ char findFirstNonRepeatingCharApproach1_BruteForce(string s)
     }
     return '$';
 }
+
 int main()
 {
     // EASY PROBLEM
     string s = "geeksforgeeks";
-    string s2 ="india";
+    string s2 = "india";
     cout << findFirstNonRepeatingCharApproach1_BruteForce(s) << endl;
     cout << findFirstNonRepeatingCharApproach1_Better(s) << endl;
-    cout<<"Optimsed approach: "<<firstNonRepeatingCharInStream(s2)<<endl;
+
+    /*----------------------------------------variation2 ----------------------*/
+    cout << "Median in Stream: " << firstNonRepeatingCharInStream_Optimised(s2) << endl;
+
     cout << "Find the first Non Repeating Element in the string " << endl;
     return 0;
 }

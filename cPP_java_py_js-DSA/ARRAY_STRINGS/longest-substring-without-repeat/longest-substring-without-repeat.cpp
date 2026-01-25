@@ -4,6 +4,15 @@ using namespace std;
 
 /* Given an string , we have find the longest substring (contigious) without contains unique character and do not contains repeating characters and have maximum length*/
 
+/*-------------------------------Optimised Approach --------------------------------*/
+int lengthOfLongestSubstringUniqueCharacters_Approach_Optimised(string s)
+{
+
+    // concept :
+    // time :
+    // space :
+}
+/*------------------------------------------------Brute Force--------------------------------*/
 // helper function
 bool checkUnique(unordered_map<char, int> &mp)
 {
@@ -45,6 +54,7 @@ int lengthOfLongestSubstringUniqueCharacters_Approach1_Brute(string s)
         }
         else
         {
+            // window needs to be shrink
             mp[s[i]]--;
             i++;
             lastResult = false;
@@ -62,3 +72,7 @@ int main()
     cout << lengthOfLongestSubstringUniqueCharacters_Approach1_Brute(s) << endl;
     cout << lengthOfLongestSubstringUniqueCharacters_Approach1_Brute(t2) << endl;
 }
+
+/*
+https://www.youtube.com/watch?v=-zSxTJkcdAo
+*/

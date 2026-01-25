@@ -28,4 +28,15 @@ void printArray(vector<int> &arr)
     }
     cout << endl;
 }
+
+void printStringArray(vector<string> s)
+{
+
+    cout << "[";
+    for (auto i : s)
+    {
+        cout << i << ",";
+    }
+    cout << "]\n";
+}
 #endif // PRINT_COMPLEXITY_H
