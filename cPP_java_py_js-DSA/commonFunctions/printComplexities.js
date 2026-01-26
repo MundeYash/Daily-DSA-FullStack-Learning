@@ -1,7 +1,7 @@
 export function printComplexityOfSolution(
   approachNameType,
   timeComplexity,
-  spaceComplexity = "O(1)"
+  spaceComplexity = "O(1)",
 ) {
   console.log("\n");
   console.log("Approach, Concept", approachNameType);
