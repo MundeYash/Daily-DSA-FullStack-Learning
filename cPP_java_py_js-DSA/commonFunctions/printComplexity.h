@@ -39,4 +39,19 @@ void printStringArray(vector<string> s)
     }
     cout << "]\n";
 }
+
+void printStringOfStringArray(vector<vector<string>> s)
+{
+    cout << "[";
+    for (auto i : s)
+    {
+        cout << "[";
+        for (auto j : i)
+        {
+            cout << j << ", ";
+        }
+        cout << "]\n";
+    }
+    cout << "]\n";
+}
 #endif // PRINT_COMPLEXITY_H
