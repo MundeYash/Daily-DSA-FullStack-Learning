@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../0commonFunctionsss/printComplexity.h"
+#include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 
 /*----------------------------------------------------------------------------------------*/
