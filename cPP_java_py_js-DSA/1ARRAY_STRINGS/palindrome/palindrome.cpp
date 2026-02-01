@@ -1,6 +1,6 @@
 // check palindrome - cPP code is pending
 #include <bits/stdc++.h>
-#include "../../commonFunctions/printComplexity.h"
+#include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 bool checkPalindromeString_Approach_Optimised(string s)
 {

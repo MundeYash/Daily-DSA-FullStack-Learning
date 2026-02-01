@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../commonFunctions/printComplexity.h"
+#include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 /*NEXT-GREATER-ELEMENT - Given an array of integers and we need to find next greater element (element which is just greater than current value on right side of the array ) for each element of the array  */
 

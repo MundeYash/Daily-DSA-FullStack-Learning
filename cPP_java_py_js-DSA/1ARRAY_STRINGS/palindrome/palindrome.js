@@ -1,4 +1,4 @@
-import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
+import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 // Problem Statement : Given a string and we have to check whether it is a palindrome or not.
 
 let str = "naman";

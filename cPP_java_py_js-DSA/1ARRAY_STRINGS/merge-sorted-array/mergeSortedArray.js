@@ -1,4 +1,4 @@
-import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
+import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 /*MERGE TWO SORTED ARRAY  :  Given Two sorted and we need to merge them in place */
 
 /*------------------------------BruteForce---------------------------------- */

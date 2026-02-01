@@ -4,6 +4,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void lineSeperator(){
+    cout<<"--------------------------------------------------------------------"<<endl;
+}
 void printComplexities(string timeComplexity, string spaceComplexity)
 {
     cout << "Time: " << timeComplexity;
@@ -13,7 +16,7 @@ void printComplexities(string timeComplexity, string spaceComplexity)
 void printArray(vector<int> &arr)
 {
     int n = arr.size();
-    cout << "Array elements: [";
+    cout << "elements of array : [";
     for (int i = 0; i < n; i++)
     {
 

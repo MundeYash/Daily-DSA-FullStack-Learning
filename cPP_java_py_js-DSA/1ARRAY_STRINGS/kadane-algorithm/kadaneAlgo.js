@@ -1,4 +1,4 @@
-import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
+import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 let arr = [2, 3, -8, 7, -1, 2, 3];
 console.log(arr);
 
