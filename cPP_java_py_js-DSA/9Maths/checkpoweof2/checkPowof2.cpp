@@ -44,9 +44,9 @@ int checkPowerOfTwo_Approach_Optimised(int n)
 int main()
 {
     cout << checkPowerOfTwo_Approach_Optimised(2) << endl;
-    cout << checkPowerOfTwo_Approach_Optimised(6) << endl;
+    cout << checkPowerofTwo_Approach_Brute(2) << endl;
     cout << checkPowerOfTwo_Approach_Optimised(8) << endl;
-    cout << checkPowerOfTwo_Approach_Optimised(12) << endl;
+    cout << checkPowerofTwo_Approach_Brute(8) << endl;
     cout << "Check whether given number is pow of 2 or not " << endl;
     return 0;
 }
