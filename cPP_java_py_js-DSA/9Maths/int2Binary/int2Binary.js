@@ -1,6 +1,6 @@
 import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 
-// Given a number and we have find the binary representation of it 
+// Given a number and we have find the binary representation of it
 let n = 29;
 
 function reverseString(s) {

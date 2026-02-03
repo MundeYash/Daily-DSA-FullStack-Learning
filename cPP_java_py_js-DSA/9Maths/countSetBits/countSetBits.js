@@ -20,7 +20,7 @@ function countSetBitsInNumber_Optimised(n) {
   console.log(arr);
   return count;
 }
-let n = 4;
+let n = 40;
 console.log("number is ", n);
 
 const ans = countSetBitsInNumber_Optimised(n);

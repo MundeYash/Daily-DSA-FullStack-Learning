@@ -14,6 +14,7 @@ int checkPowerofTwo_Approach_Brute(int n)
     // time : O(31 * n) , space :O(1)
     for (int i = 0; i <= 31; i++)
     {
+        // step 1: check from power of two from 1 to 31 (answer may ly in this range )
         if (pow(2, i) == n)
             return true;
     }
@@ -24,6 +25,8 @@ int checkPowerOfTwo_Approach_Optimised(int n)
 
     printComplexities("O(n)", "O(1)");
     // concept : bits + check 0 bit
+    // hint : power of two number will only contain 1 at the start
+
     if (n == 0)
         return false; // edge case
     int ld;
