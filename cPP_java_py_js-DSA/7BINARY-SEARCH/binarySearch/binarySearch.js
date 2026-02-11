@@ -1,11 +1,11 @@
 import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 
-// BINARY SEARCH CONCEPT: Given a sorted array and we need to find the whether the key exits in the array or not
+// BINARY SEARCH CONCEPT: Given a sorted array and we need to find the whether the key exits in the array or not and if exits return the index of the key (first value )
 
-let arr = [1, 2, 3, 4, 5, 5];
+let arr = [1, 2, 3, 4,5, 5, 5];
 
 function binarySearchImplement(arr, target) {
-  printComplexityOfSolution("binary search", "O(n log n ", "O(1)");
+  printComplexityOfSolution("binary search", "O(n log n )", "O(1)");
   let low = 0;
   let high = arr.length - 1;
   while (low <= high) {
@@ -18,5 +18,12 @@ function binarySearchImplement(arr, target) {
   }
   return -1;
 }
+let key = 5;
 
-console.log("index of target ", arr, binarySearchImplement(arr, 2));
+console.log(
+  arr,
+  "Key present at index ",
+  binarySearchImplement(arr, key),
+  "key to be searched ",
+  key,
+);
