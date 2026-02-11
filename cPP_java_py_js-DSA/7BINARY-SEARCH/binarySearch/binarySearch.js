@@ -2,7 +2,7 @@ import { printComplexityOfSolution } from "../../0commonFunctions/printComplexit
 
 // BINARY SEARCH CONCEPT: Given a sorted array and we need to find the whether the key exits in the array or not and if exits return the index of the key (first value )
 
-let arr = [1, 2, 3, 4,5, 5, 5];
+let arr = [1, 2, 3, 4, 5, 5, 5];
 
 function binarySearchImplement(arr, target) {
   printComplexityOfSolution("binary search", "O(n log n )", "O(1)");
