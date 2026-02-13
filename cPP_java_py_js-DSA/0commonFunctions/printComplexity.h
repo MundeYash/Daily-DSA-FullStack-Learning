@@ -29,7 +29,7 @@ void printArray(vector<int> &arr)
             cout << arr[i] << ",";
         }
     }
-    cout << endl;
+    cout <<""<< endl;
 }
 
 void printStringArray(vector<string> s)
