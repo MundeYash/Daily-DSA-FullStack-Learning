@@ -4,7 +4,7 @@ ROTATE ARRAY : Given an array of integers and we need to find rotate the array e
 */
 
 #include <bits/stdc++.h>
-#include "../../commonFunctions/printComplexity.h"
+#include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 
 /*---------------------Optimsised Approach-------------------------------------------------------------------*/

@@ -1,4 +1,4 @@
-import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
+import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 // Problem : Given sorted array and we need remove all the duplicate elements and left behind only the non-duplicate element in the array
 /*------------------------------------------------------------ */
 

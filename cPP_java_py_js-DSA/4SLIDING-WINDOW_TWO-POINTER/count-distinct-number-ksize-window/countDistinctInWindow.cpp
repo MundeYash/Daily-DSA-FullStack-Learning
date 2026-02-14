@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../commonFunctions/printComplexity.h"
+#include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 // Given an array of words and we need to find the no of distinct element in every window of size k
 
