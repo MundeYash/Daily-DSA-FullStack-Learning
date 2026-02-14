@@ -1,0 +1,1 @@
+// Important function(higher order functions in array )
