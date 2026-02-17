@@ -1,4 +1,4 @@
-import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
+import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 
 //Given two strings and we need to check whether they are permutation of each other or not
 function validAnagramString_Approach_Brute(s, t) {

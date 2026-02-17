@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../commonFunctions/printComplexity.h"
+#include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 // Given Two strings of equal length and we need to check whether they are isomorphic or not , means if we map charater of one string s with string t , it should match along with maintain the same order
 

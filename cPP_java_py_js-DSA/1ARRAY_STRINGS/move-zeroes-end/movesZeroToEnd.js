@@ -1,4 +1,4 @@
-import { printComplexityOfSolution } from "../../commonFunctions/printComplexities.js";
+import { printComplexityOfSolution } from "../../0commonFunctions/printComplexities.js";
 
 // Problem Statement : Move Zeroes to end of array  (leet code standard)
 /*
