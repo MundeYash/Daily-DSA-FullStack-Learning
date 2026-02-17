@@ -9,3 +9,8 @@ export function printComplexityOfSolution(
   console.log("Space Complexity", spaceComplexity);
   return;
 }
+
+export function  printArray(arr ){
+  
+  console.log("The elements of array is : ",arr);
+}
