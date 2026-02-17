@@ -2,8 +2,35 @@
 #include "../../0commonFunctions/printComplexity.h"
 using namespace std;
 
-// Given an array of integers and we need to find the product of all element excluding current element
+// Given an array of integers and we need to find the product of all element excluding current element fpr each  index in the array
 
+vector<int> productOfArrayExceptSelf_Optimised2_approach(vector<int> arr)
+{
+    // concept : advance prefix and suffix computation
+    // time : O(n) , space :O(1) ; (ans array space is not considered)
+     printComplexities("O(n)", "O(1)");
+    vector<int> ans;
+    int n = arr.size();
+
+    // step 1: calcuate the prefix product (iterate from left )
+    int prefixProd = 1;
+
+    for (int i = 0; i < n; i++)
+    {
+        ans.push_back(prefixProd);
+        prefixProd *= arr[i];
+    }
+
+    // step 2 : calculate suffix prod , multiply with store prefix (iterate from right )
+    int suffixProd = 1;
+    for (int i = n - 1; i >= 0; i--)
+    {
+        ans[i] = (ans[i] * suffixProd);
+        suffixProd *= arr[i];
+    }
+    return ans;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 vector<int> productOfArrayExceptSelf_Optimised_approach(vector<int> arr)
 {
     // concept : prefix sum and computation product
@@ -43,6 +70,7 @@ vector<int> productOfArrayExceptSelf_Optimised_approach(vector<int> arr)
     }
     return ans;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 vector<int> productOfArrayExceptSelf_Brute_Force_approach(vector<int> arr)
 {
     vector<int> ans;
@@ -72,5 +100,8 @@ int main()
 
     vector<int> ans2 = productOfArrayExceptSelf_Optimised_approach(arr);
     printArray(ans2);
+
+    vector<int> ans3 = productOfArrayExceptSelf_Optimised2_approach(arr);
+    printArray(ans3);
     return 0;
 }
