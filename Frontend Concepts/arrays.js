@@ -19,8 +19,23 @@ console.log(arr2);
 arr2.pop() ;// this method is used to remove the last value of the array 
 
 
-arr2.reverse();
+arr2.reverse();// reverse method 
 console.log(arr2);
 
 
 // Inbuilts function for javascript 
+
+let numbers= [1,2,3,4]; 
+console.log(numbers);
+let print = (value)=>{
+console.log(value);
+}
+
+
+let temp =[];
+console.log("Before", temp);
+numbers.forEach((value)=>temp.push(value));
+console.log("After" , temp);
+
+// find function 
+console.log("find function",numbers.find(()=> 3) ) ;
