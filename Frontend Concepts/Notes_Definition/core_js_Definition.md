@@ -13,7 +13,7 @@
 
 2.Hoisting 
 
-    Hoisting is JavaScript’s default behavior of moving declarations to the top of their scope during memory creation phase.
+    Hoisting is JavaScript’s default behavior of moving declarations(functions declaration and variable declaration) to the top of their scope during memory creation phase.
 
 
 3.Closures 
@@ -27,9 +27,24 @@
 
     2.Function Scope
         Jo variable function ke andar declare ho (var, let, const)
-    3.Block Scope 
+    3.Block Scope
+        curly braces {} ke inside declared functions and variables are blocked scoped
+         
 
 
+---------------------------------------------------------------------------------------
+How Javascript code is executed?
+
+Phase 1 : Memory creation phase (Execution context)| Creation Phase 
+Phase 2 : Code execution phase
+
+Call Stack : call stack maintains the order of execution of execution context.
+Javascript Engine:
+Execution Context :
+
+
+
+Hoisting : 
 
 
 
