@@ -10,7 +10,6 @@ export function printComplexityOfSolution(
   return;
 }
 
-export function  printArray(arr ){
-  
-  console.log("The elements of array is : ",arr);
+export function printArray(arr) {
+  console.log("The elements of array is : ", arr);
 }

@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-   
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,json,md}\"",
     "prettier": "npm run format",
     "preview": "vite preview"

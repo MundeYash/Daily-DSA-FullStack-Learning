@@ -20,10 +20,10 @@ function reverseArray(arr) {
 
 // reverse string : because string are immutable;
 
-
 function reverseString(s) {
   let arr = s.split("");
-  let i = 0, j = arr.length - 1;
+  let i = 0,
+    j = arr.length - 1;
 
   while (i < j) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -38,4 +38,3 @@ let str = "rakesh";
 console.log(str);
 str = reverseString(str);
 console.log(str); // hsekar
-
