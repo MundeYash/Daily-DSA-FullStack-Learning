@@ -31,7 +31,6 @@ function approach1BruteForce(arr) {
   console.log("Brute Force ", approach1BruteForce(arr));
 })();
 
-
 function approach2Optimised(arr) {
   // concept : Two Pointer and swaping
 
