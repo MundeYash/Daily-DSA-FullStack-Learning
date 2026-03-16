@@ -55,3 +55,11 @@
     }
     console.log("this keyword inside arrow function",);
     obj2.myFunction(29,30);
+
+
+
+    const test = (...inputArgs)=>{
+        // using sparead operators
+        console.log("The input paramters are", inputArgs.length);
+    }
+    test();
