@@ -21,6 +21,10 @@ console.log("filtered value is ", filteredArray);
 
 
 // find method 
+console.log('find method ',arr.find( (number)=> number ==4  )); /// it will return value 
+console.log('findIndex method', arr.findIndex((num)=> num ==3));// it will return index 
+
+console.log('includes method ' , arr.includes(2)); // it will boolean
 
 // includes method 
 

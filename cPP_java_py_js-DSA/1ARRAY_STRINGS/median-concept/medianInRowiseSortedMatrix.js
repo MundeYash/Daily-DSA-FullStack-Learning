@@ -1,4 +1,3 @@
-
 // Problem Statement : Given a  matrix in which each row is sorted and we have find the median of this matrix elements
 /*Optimised Approach : pending (binary search based solution ) ---------------------------------------------------------------------------*/
 
@@ -25,7 +24,6 @@ function medianInRowiseSortedMatrix_Approach1_BruteForce(matrix) {
   return findMedianInSortedArray(arr);
 }
 
-
 // calling part
 
 let matrix = [
@@ -44,11 +42,11 @@ const ans = medianInRowiseSortedMatrix_Approach1_BruteForce(matrix);
 console.log("The median of rowise sorted matrix is :", ans);
 console.log(
   "The median of rowise sorted matrix is :",
-  medianInRowiseSortedMatrix_Approach1_BruteForce(matrix2)
+  medianInRowiseSortedMatrix_Approach1_BruteForce(matrix2),
 );
 console.log(
   "The median of rowise sorted matrix is :",
-  medianInRowiseSortedMatrix_Approach1_BruteForce(matrix3)
+  medianInRowiseSortedMatrix_Approach1_BruteForce(matrix3),
 );
 
 /**
