@@ -1,20 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Implement a class which generates min of stack in o(1)
+// Implement a class-stack which generates min value present in the stack in o(1) time 
 
-class minStack2
+
+/**
+Optimised Approach : TIME O(N) , space :O(1)
+concept : using FORMULA (2*curr - min) for push | (2*min-curr) for pop operation
+
+ * 
+ */
+class minStackOptimised
 {
-    // Optimised Approach : TIME O(N) , space :O(1)
-    // concept : using FORMULA (2*curr - min) for push | (2*min-curr) for pop operation
-
+    
     // public members
-public:
-    int mini;
-    stack<int> st;
+    public:
+        int mini;
+        stack<int> st;
 
     // constuctor
-    minStack2()
+    minStackOptimised()
     {
         // intialize the mini variable
         mini = INT_MAX;
@@ -113,11 +118,16 @@ public:
     }
 };
 
-class minStack
-{
-    /*
+
+
+ /*
+        Approach2 : Better Approach
         TIME COMPLEXITY: O(n), space : O(N)
+        concpet- use two stack for keeping track of minmum element 
      */
+class minStackBetter
+{
+   
     // public variables
 public:
     stack<int> st;
@@ -125,7 +135,7 @@ public:
     int mini;
 
     // constructor
-    minStack()
+    minStackBetter()
     {
         mini = INT_MAX;
     }
@@ -173,59 +183,70 @@ public:
     }
 };
 
-
-class minStackBrute{
-    // Brute force approach : TIME: O(n*k), SPACE : O(1) for getting minimum element 
-    private : 
-    int findMimumElementInStack(stack<int>st){
-        int ans = -1; 
-        if(st.empty())return ans;
-        while(!st.empty()){
-            ans = min(ans,st.top()); 
+/*
+ // Brute force approach :
+    concept: find minimum element in the stack every time 
+  TIME: O(n*k), SPACE : O(1) for getting minimum element
+*/
+class minStackBrute
+{
+   
+private:
+    int findMimumElementInStack(stack<int> st)
+    {
+        int ans = -1;
+        if (st.empty())
+            return ans;
+        while (!st.empty())
+        {
+            ans = min(ans, st.top());
             st.pop();
         }
         return ans;
-
     }
 
-    public : 
-    int mini; 
-    stack<int>st; 
+public:
+    int mini;
+    stack<int> st;
 
-    // constructor 
-    minStackBrute(){
+    // constructor
+    minStackBrute()
+    {
         mini = INT_MAX;
     }
 
-    // push operation 
-    void push(int data){
+    // push operation
+    void push(int data)
+    {
         st.push(data);
-        return ;
-
+        return;
     }
 
-    // pop operation 
-    void pop(){
-        if(st.empty()) cout<<"Stack is empty "<<endl;
+    // pop operation
+    void pop()
+    {
+        if (st.empty())
+            cout << "Stack is empty " << endl;
         st.pop();
     }
 
-    // top element 
-    int top(){
-        int ans =-1;
-        if(st.empty())return ans;
-        ans = st.top(); 
+    // top element
+    int top()
+    {
+        int ans = -1;
+        if (st.empty())
+            return ans;
+        ans = st.top();
         return ans;
     }
 
-
-    // getMin  element 
-    int getMin(){
-        // take another helper function for calculating minimum elements 
+    // getMin  element
+    int getMin()
+    {
+        // take another helper function for calculating minimum elements
         int ans = findMimumElementInStack(st);
         return ans;
     }
-
 };
 int main()
 {
