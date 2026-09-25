@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../../0commonFunctions/printComplexity.h"
+#include "../../../0commonFunctions/printComplexity.h"
 using namespace std;
 /*NEXT-GREATER-ELEMENT - Given an array of integers and we need to find next greater element (element which is just greater than current value on right side of the array ) for each element of the array  */
 
@@ -7,8 +7,32 @@ using namespace std;
 vector<int> nextGreaterElement_Approach2_Optimised(vector<int> arr)
 {
     // concept : Stack based solution
-    // time : O(n), space :O(n)
+    // time : O(n), space :O(1)
     // pending to solve
+    stack<int> st; 
+    int n = arr.size();
+    vector<int>ans(n,-1);
+    for(int i=n-1;i>=0;i--){
+        int value = arr[i]; 
+       
+        
+            while(!st.empty()&&st.top()<=value){
+                st.pop();
+            }
+        
+            if(st.empty()){
+                ans[i]=(-1);
+            }
+            else{
+                ans[i]=(st.top());
+            }
+
+            // push current element 
+            st.push(value);
+        
+    }
+
+    return ans;
 }
 
 /*----------------------------------------------------------------------------------------*/
@@ -48,5 +72,8 @@ int main()
     printArray(arr);
     vector<int> ans1 = nextGreaterElement_Approach1_Brute(arr);
     printArray(ans1);
+
+    vector<int> ans2 = nextGreaterElement_Approach2_Optimised(arr);
+    printArray(ans2);
     return 0;
 }

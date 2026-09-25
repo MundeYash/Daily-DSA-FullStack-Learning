@@ -16,7 +16,7 @@ void printComplexities(string timeComplexity, string spaceComplexity)
 void printArray(vector<int> &arr)
 {
     int n = arr.size();
-    cout << "elements of array : [";
+    cout << " [";
     for (int i = 0; i < n; i++)
     {
 
