@@ -2,7 +2,7 @@
 using namespace std; 
 
 // Implementation of stack using single queue ()
-// Approach - use current size before inserting elements and insert elements at the end of the stack 
+// Approach - use current size (fixed value )before inserting elements and insert elements at the end of the stack 
 //time :O(n), space :O(n-> single queue space )
 
 
