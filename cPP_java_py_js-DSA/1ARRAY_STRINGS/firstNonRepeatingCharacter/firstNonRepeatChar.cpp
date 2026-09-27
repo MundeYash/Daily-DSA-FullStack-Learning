@@ -114,11 +114,12 @@ int main()
     // EASY PROBLEM
     string s = "geeksforgeeks";
     string s2 = "india";
-    cout << findFirstNonRepeatingCharApproach1_BruteForce(s) << endl;
-    cout << findFirstNonRepeatingCharApproach1_Better(s) << endl;
+    // cout << findFirstNonRepeatingCharApproach1_BruteForce(s) << endl;
+    // cout << findFirstNonRepeatingCharApproach1_Better(s) << endl;
 
     /*----------------------------------------variation2 ----------------------*/
-    cout << "Median in Stream: " << firstNonRepeatingCharInStream_Optimised(s2) << endl;
+    cout << "first Non Repeat character is :  " << firstNonRepeatingCharInStream_Optimised(s2) << endl;
+    
 
     cout << "Find the first Non Repeating Element in the string " << endl;
     return 0;
